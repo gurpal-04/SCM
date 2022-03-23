@@ -2,7 +2,7 @@ Myself Gurpal Singh
 1st file to commit
 
 git status
-git add
+git add      //starts tracking
 git commit - m "message it will show"
 git status
-git log
+git log       // shows history
