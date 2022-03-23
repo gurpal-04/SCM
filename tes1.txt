@@ -1,8 +1,19 @@
 Myself Gurpal Singh
 1st file to commit
 
+git --version    //shows version
+
 git status
-git add      //starts tracking
+git add   file name.extention   //starts tracking
+                eg:  git add text1.txt
+git add .  //add all the files
 git commit - m "message it will show"
 git status
 git log       // shows history
+
+
+clear   //clears the git command line
+git config --global user.email  "example@mail.com"  //attach email to git bash
+git config --global user.name  "user name at git hub with above given email id"  
+git init   // makes u master
+git --help  //shows everything i am writing even more
