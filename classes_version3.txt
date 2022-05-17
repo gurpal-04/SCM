@@ -1,0 +1,51 @@
+#include <iostream>
+
+using namespace std;
+
+class student{
+    
+    //int rollno;
+    int m[5];
+    public:
+    int rollno;
+    int cal_total();
+    void read_marks();
+};
+
+int student::cal_total(){
+    int sum=0;
+    for (int j=0;j<3;j++){
+    sum+=m[j];
+    
+}return sum;
+}
+
+void student::read_marks(){
+    cout<<"Enter rollno "<<endl;
+    cin>>rollno;
+    cout<<"Enter 3 marks "<<endl;
+for (int i=0;i<3;i++){
+    
+    cin>>m[i];
+    
+}return;
+}
+
+int main()
+{
+    //cout<<"Hello World";
+    student s[5];
+    for(int i=0;i<5;i++){
+        cout<<"Marks of "<<i+1<<" student"<<endl;
+        s[i].read_marks();
+    }
+    //s1.read_marks();
+    //cout<<"Marks of rollno "<<s1.rollno<<" is "<<s1.cal_total();
+    for(int i=0;i<5;i++){
+        
+        cout<<"Marks of rollno "<<s[i].rollno<<" is "<<s[i].cal_total()<<endl;
+    }
+    
+
+    return 0;
+}
